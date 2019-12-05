@@ -61,7 +61,7 @@
 #define VHM_VM_MNGT_H
 
 #include <linux/list.h>
-#include <linux/rwlock_types.h>
+#include <linux/spinlock_types.h>
 
 extern struct list_head vhm_vm_list;
 extern rwlock_t vhm_vm_list_lock;
